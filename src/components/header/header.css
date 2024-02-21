@@ -1,0 +1,44 @@
+
+
+.login-form{
+    display: flex;
+    justify-content: center;
+    
+  align-items: center;
+  margin-left: 30px;
+  gap: 5px;
+}
+
+.login-form input {
+    height: 30px;
+    width: 140px;
+    border-radius: 10px;
+    background-color: rgb(194, 204, 213);
+    
+
+
+}
+
+.login-button{
+    border-radius: 10px;
+    margin-left: 5px;
+    width: 80px;
+   
+    writing-mode: horizontal-tb;
+}
+
+.login-user{
+    color: aliceblue;
+    margin-left: 130px;
+    height: 40px;
+    
+   
+
+}
+.login-user p {
+    margin-top: 7px;
+    
+}
+.initial-button{
+    margin-left: 30vw;
+}

@@ -1,0 +1,7 @@
+.footer-position{
+
+     position: absolute;
+  bottom: 0; /* 화면 하단에 고정됩니다. */
+  width: 100%;
+  background-color: #1487cab6;
+}
