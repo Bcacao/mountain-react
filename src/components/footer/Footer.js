@@ -7,9 +7,9 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-6">
-            <h5>Contact Us</h5>
-            <p>Email: example@email.com</p>
-            <p>Phone: +1 123-456-7890</p>
+            <h5>Contact Me</h5>
+            <p>Email: boy5315@gmail.com</p>
+            <p>Phone: 010-4113-6674</p>
           </div>
           <div className="col-md-6">
             <h5>Social Media</h5>

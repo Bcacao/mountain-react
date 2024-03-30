@@ -14,9 +14,6 @@
     width: 140px;
     border-radius: 10px;
     background-color: rgb(194, 204, 213);
-    
-
-
 }
 
 .login-button{
@@ -42,3 +39,13 @@
 .initial-button{
     margin-left: 30vw;
 }
+
+.profile-image {
+    width: 40px; /* 이미지의 너비 조정 */
+    height: 40px; /* 이미지의 높이 조정 */
+    border-radius: 50%; /* 원형 모양으로 이미지를 만듭니다. */
+    object-fit: cover; /* 이미지가 컨테이너에 맞게 자동 조절되도록 합니다. */
+  }
+
+
+

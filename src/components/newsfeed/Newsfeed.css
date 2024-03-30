@@ -1,0 +1,154 @@
+/* 기본 마진과 패딩 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* 전체 피드 컨테이너 */
+  .feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* 각 포스트 스타일링 */
+  .post {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-user-image,
+  .comment-user-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-right: 10px;
+  }
+  
+  .post-info, .comment-info {
+    padding: 15px;
+  }
+  
+  .post-user-nick, .comment-user-nick {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .post-image {
+    height: 400px;
+    width: 500px;
+    display: block;
+    margin: auto;
+    object-fit: contain;
+    object-position: center;
+    
+  }
+  
+  .post-content {
+    margin-top: 10px;
+  }
+  
+  .post-time, .comment-time {
+    color: #666;
+    font-size: 0.8rem;
+    margin-top: 5px;
+  }
+  
+  .comment {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-top: 1px solid #eee;
+  }
+
+  .post-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  
+  .edit-buttons button {
+    margin-left: 10px;
+  }
+  
+
+
+  .custom-modal .modal-dialog {
+    max-width: 600px; /* 모달의 최대 너비를 600px로 설정 */
+  }
+  
+  .custom-modal .modal-content {
+    height: 750px; /* 모달 컨텐츠의 높이를 600px로 설정 */
+  }
+
+
+
+
+  /* 이미지 업로드 컨테이너 스타일 */
+.image-upload-container img {
+  width: 70%; /* 이미지 크기를 70%로 설정 */
+  height: auto; /* 높이를 자동으로 설정하여 비율을 유지 */
+  display: block;
+  margin: 0 auto; /* 중앙 정렬 */
+}
+
+/* 포스트 내용 입력 영역 스타일 */
+#postContent {
+  width: 100%; /* 텍스트 입력 영역 크기를 100%로 설정 */
+}
+
+.comment-form{
+  
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.comment-input{
+  border-radius: 5px;
+  margin-right: 2px;
+  
+}
+.comment-submit-button{
+  
+  border-radius: 5px;
+  width: 40px;
+  background-color: #df1919;
+  color:#fff
+  
+}
+
+.button-style{
+  border-radius: 5px;
+  width: 40px;
+  background-color: #000000;
+  color:#ffffff
+}
+
+.post-time{
+  margin-left: 450px;
+}
+
+.member-nick{
+  font-size: 25px;
+  font-weight: 500;
+  color: rgb(10, 101, 143);
+  
+  
+}
+
+.comment-delete-button{
+  border-radius: 5px;
+  width: 40px;
+  margin-left: 350px;
+  color: #ffffff;
+  background-color: #000000;
+  
+}
