@@ -22,7 +22,7 @@ function Header({setIsLoginCheck, setUserId}) {
       setProfileImageUrl(BACKEND_URL+'profile-images'+response.data.member_image)
     })
       .catch((error)=>{console.error("로그인 정보 없음", error)})
-    },[logout])
+    },[logout, login])
  
 
     const handleLogout = (e) => {
@@ -58,6 +58,7 @@ function Header({setIsLoginCheck, setUserId}) {
         })
         .catch((error) => {
           console.error('로그인 실패:', error);
+          alert(error.response.data);
           // 여기서 실패 처리 로직을 추가할 수 있습니다.
           // 예를 들어, 사용자에게 실패 메시지를 보여주는 등의 작업이 가능합니다.
         });
@@ -139,10 +140,12 @@ function Header({setIsLoginCheck, setUserId}) {
         .then((result) => {
           console.log(result);
           setLogin(false); // 가정: setLogin은 로그인 상태를 관리하는 함수
+          setLogin(true);
           props.onHide(); // 성공 시 모달 닫기
         })
         .catch((error) => {
           console.error('회원가입 실패:', error);
+          alert('사용중인 ID 입니다');
           // 사용자에게 실패 메시지를 표시
           // 예: setError("회원가입에 실패했습니다. 다시 시도해주세요.");
         });

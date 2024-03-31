@@ -4,6 +4,7 @@ import './Newsfeed.css';
 import { Modal, Button, Form } from 'react-bootstrap';
 import { BACKEND_URL } from '../../config';
 import axios from 'axios';
+import exampleImage from '../../img/십자가아.png'; 
 
 
 // Import other components and services
@@ -79,6 +80,7 @@ const Feed = ({isLoginCheck,userId}) => {
     })
       .catch((error)=>{
         console.error("로그인 정보 없음", error);
+
       setLogin(false);
     })
     }, [showModal]) 
@@ -116,18 +118,18 @@ const Feed = ({isLoginCheck,userId}) => {
 
 
       {showModal && (
-        <Modal show={true} onHide={() => setShowModal(false)} centered size="lg" className="custom-modal">
+        <Modal show={true} onHide={() => {setShowModal(false); setImage(exampleImage)}} centered size="lg" className="custom-modal">
           <Modal.Header closeButton>
-            <Modal.Title>새 포스트 작성</Modal.Title>
+            <Modal.Title>새 개시물</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <Form>
               <div className="image-upload-container" style={{ marginBottom: '20px' }}>
                 <label htmlFor="image-upload" style={{ width: '100%', cursor: 'pointer' }}>
                   <img
-                    src={image || "https://via.placeholder.com/150"}
+                    src={image || exampleImage}
                     alt="Upload"
-                    style={{ width: '70%', height: 'auto', display: 'block', margin: '0 auto' }}
+                    style={{ width: '395px', height: '395px', display: 'block', margin: '0 auto', objectFit: 'contain' }}
                   />
                 </label>
                 <input
@@ -135,6 +137,7 @@ const Feed = ({isLoginCheck,userId}) => {
                   type="file"
                   onChange={handleImageChange}
                   style={{ display: 'none' }}
+                  
                 />
               </div>
               <Form.Group className="mb-3" controlId="postContent">
@@ -143,7 +146,8 @@ const Feed = ({isLoginCheck,userId}) => {
                   rows={3}
                   value={text}
                   onChange={(e) => setText(e.target.value)}
-                  style={{ width: '100%' }}
+                  style={{ width: '100%', height: '140px' }}
+                  placeholder="글 작성..."
                 />
               </Form.Group>
             </Form>

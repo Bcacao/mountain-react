@@ -34,6 +34,8 @@
   
   .post-info, .comment-info {
     padding: 15px;
+    width: 400px;
+    text-align: left;
   }
   
   .post-user-nick, .comment-user-nick {
@@ -147,7 +149,7 @@
 .comment-delete-button{
   border-radius: 5px;
   width: 40px;
-  margin-left: 350px;
+  margin-left: 0px;
   color: #ffffff;
   background-color: #000000;
   
