@@ -35,4 +35,4 @@
    ```bash
    aws s3 sync ./build s3://marku.co.kr
    ```
-   여기서 `marku.co.kr`은 실제 S3 버킷 이름으로 대체해야 합니다.
+ 
